@@ -4,6 +4,11 @@ package Functions;
 import java.util.Scanner;
 
 public class Main2 {
+
+    public static void display(int n , int r,int npr){
+            System.out.println(n + "p" + r + " = " + npr);
+    }
+
     public static int fact(int x){
         int rv = 1;
 
@@ -21,7 +26,7 @@ public class Main2 {
         int nmrfact = fact(n-r);
 
         int npr = nfact / nmrfact;
-        System.out.println(n + "p" + r + " = " + npr);
+        display(n, r,npr);
     }
     
 }
